@@ -16,16 +16,9 @@ function filterByRating(
 }
 
 function concatenateArrays<T>(...arrays: T[][]): T[] {
-  return arrays.reduce((acc, cur) => {
+  return arrays.reduce((acc: T[], cur: T[]) => {
     return acc.concat(cur);
   }, []);
-  //   const result: Array<T> = [];
-  //   arrays.forEach((item) => {
-  //     item.forEach((item2) => {
-  //       result.push(item2);
-  //     });
-  //   });
-  //   return result;
 }
 
 class Vehicle {
@@ -71,7 +64,7 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
   }
 
   let singleProduct: Product = products[0];
-  products.forEach((item) => {
+  products.forEach((item: Product) => {
     if (item.price > singleProduct.price) {
       singleProduct = item;
     }
@@ -95,6 +88,7 @@ function getDayType(day: Day): string {
     return `Weekday`;
   }
 }
+
 async function squareAsync(n: number): Promise<number> {
   return new Promise<number>((res, rej) => {
     const data: number = n;
