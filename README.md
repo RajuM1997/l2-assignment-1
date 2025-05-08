@@ -2,7 +2,6 @@
 
 ## Interface
 
-**Description:**
 An interface is primarily designed for object types. Though it can also be used with classes, function signatures, etc.
 
 **Example:**
@@ -16,7 +15,6 @@ interface User {
 
 ## Type
 
-**Description:**
 A type is more general and flexible. You can define not just objects but also unions, intersections, tuples, primitive aliases, etc.
 
 **Example:**
@@ -46,7 +44,6 @@ type User = {
 
 # What is the use of the keyof keyword in TypeScript? Provide an example.
 
-**Description:**
 With the help of the `keyof` operator, we can access each key of any type. It allows us to dynamically access all the keys of a given type.
 If we don’t use the `keyof` operator and instead manually define the keys as a union type, then whenever any key changes in the original type, we have to update it in multiple places.
 This problem doesn’t occur when using `keyof`, because it automatically reflects changes in the original type, allowing us to access all keys dynamically and maintain consistency.
