@@ -32,7 +32,7 @@ type User = {
 
 ---
 
-## Feature Comparison Table
+## Interface vs Type
 
 | Feature              | Interface                     | Type                                           |
 | -------------------- | ----------------------------- | ---------------------------------------------- |
